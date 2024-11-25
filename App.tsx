@@ -12,11 +12,8 @@ import {
 } from "react-native-executorch";
 import { MessageBubble } from "./components/MessageBubble";
 import { MessageInput } from "./components/MessageInput";
+import { Message } from "./components/types";
 
-type Message = {
-  content: string;
-  sender: "user" | "bot";
-};
 
 export default function App() {
   const [convo, setConvo] = useState<Array<Message>>([]);
